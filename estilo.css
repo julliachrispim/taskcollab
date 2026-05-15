@@ -1,11 +1,7 @@
-/* ============================================================
-   estilo.css — TaskCollab
-   Gerenciador de Tarefas Colaborativo
-   ============================================================ */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap');
 
-/* ---------- Reset & Base ---------- */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -13,35 +9,33 @@
 }
 
 :root {
-    /* Cores principais */
+
     --cor-primaria:     #b87565;
     --cor-primaria-esc: #9a5e50;
     --cor-primaria-cla: #f5e8e5;
     --cor-secundaria:   #8aab98;
 
-    /* Superfícies */
+
     --cor-fundo:        #f7f4f0;
     --cor-fundo-2:      #f0ebe4;
     --cor-superfície:   #ffffff;
     --cor-borda:        #e4dbd3;
     --cor-borda-suave:  #ede8e2;
 
-    /* Texto */
     --cor-texto:        #2c2420;
     --cor-texto-suave:  #8a7d77;
     --cor-texto-muted:  #b5a9a3;
 
-    /* Feedback */
+  
     --cor-sucesso:      #5d9e7e;
     --cor-perigo:       #b86565;
     --cor-aviso:        #c99a50;
 
-    /* Status */
+ 
     --cor-pendente:     #d4a057;
     --cor-andamento:    #7a9ec4;
     --cor-concluida:    #7aad8f;
 
-    /* Sistema */
     --raio:             10px;
     --raio-grande:      16px;
     --raio-pill:        9999px;
@@ -69,7 +63,7 @@ body {
 a { color: var(--cor-primaria); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ---------- Layout ---------- */
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -86,7 +80,7 @@ a:hover { text-decoration: underline; }
     padding: 2.25rem 0;
 }
 
-/* ---------- Cabeçalho principal ---------- */
+
 .cabecalho-principal {
     background: var(--cor-superfície);
     border-bottom: 1px solid var(--cor-borda-suave);
@@ -149,7 +143,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* ---------- Botões ---------- */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -219,7 +213,7 @@ a:hover { text-decoration: underline; }
 .btn-bloco { width: 100%; }
 .btn-pequeno { padding: .3rem .75rem; font-size: .78rem; }
 
-/* ---------- Alertas ---------- */
+
 .alerta {
     padding: .9rem 1.1rem;
     border-radius: var(--raio);
@@ -242,7 +236,7 @@ a:hover { text-decoration: underline; }
     color: #2e6b50;
 }
 
-/* ---------- Badges ---------- */
+
 .badge {
     display: inline-block;
     padding: .2rem .65rem;
@@ -263,7 +257,7 @@ a:hover { text-decoration: underline; }
     padding: .12rem .45rem;
 }
 
-/* ---------- Formulários ---------- */
+
 .campo-grupo {
     display: flex;
     flex-direction: column;
@@ -313,7 +307,7 @@ a:hover { text-decoration: underline; }
 }
 .campo-textarea { resize: vertical; min-height: 85px; line-height: 1.6; }
 
-/* Custom select arrow */
+
 .campo-select {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a7d77' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -351,7 +345,7 @@ a:hover { text-decoration: underline; }
 }
 .campo-select-inline { width: auto; }
 
-/* ---------- Página de autenticação ---------- */
+
 .pagina-auth {
     background-color: var(--cor-fundo);
     background-image:
@@ -410,7 +404,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* ---------- Página título / filtros ---------- */
+
 .pagina-titulo {
     display: flex;
     align-items: center;
@@ -451,7 +445,7 @@ a:hover { text-decoration: underline; }
     padding-bottom: 0;
 }
 
-/* ---------- Cartões de tarefa ---------- */
+
 .tarefas-lista {
     display: flex;
     flex-direction: column;
@@ -539,7 +533,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* ---------- Detalhes da tarefa ---------- */
+
 .layout-detalhes {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -610,7 +604,7 @@ a:hover { text-decoration: underline; }
     letter-spacing: .06em;
 }
 
-/* Comentários */
+
 .lista-comentarios {
     list-style: none;
     display: flex;
@@ -646,7 +640,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* Lateral histórico */
+
 .detalhes-lateral {
     background: var(--cor-superfície);
     border: 1.5px solid var(--cor-borda-suave);
@@ -697,7 +691,7 @@ a:hover { text-decoration: underline; }
     font-weight: 500;
 }
 
-/* ---------- Página de equipe ---------- */
+
 .grade-usuarios {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -787,7 +781,7 @@ a:hover { text-decoration: underline; }
 
 .usuario-acoes { display: flex; gap: .5rem; }
 
-/* ---------- Rodapé ---------- */
+
 .rodape-principal {
     background: var(--cor-superfície);
     border-top: 1.5px solid var(--cor-borda-suave);
@@ -799,7 +793,7 @@ a:hover { text-decoration: underline; }
     letter-spacing: .01em;
 }
 
-/* ---------- Responsivo ---------- */
+
 @media (max-width: 768px) {
     .layout-detalhes { grid-template-columns: 1fr; }
     .detalhes-lateral { position: static; }
